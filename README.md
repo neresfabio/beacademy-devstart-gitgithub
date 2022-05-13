@@ -1,5 +1,7 @@
 # beacademy-devstart-gitgithub
 
+## EM DESENVOLVIMENTO
+
 Este espaço é destinado a compartilhar comandos de produtividade usando GIT e GITHUB, esse repositório foi elaborado durante a imersão da DevtStart PayLivre organizada pela be.Academy, nosso primeiro desafio da semana, criar um repositório onde listaremos alguns comandos de produtividade nescessários para trabalhar com projetos.
 Com isso optei em entregar um conteudo diferente, este repositorio será dedicado a quem está iniciando na programação, ou seja, terá um mini tutorial, um passo a passo para você já ir praticando no decorrer da leitura.
 
@@ -62,8 +64,7 @@ Uma plataforma para times criarem seus projetos emm um unico lugar, a plataforma
 Instale....
 
 ```bash
-  npm install my-project
-  cd my-project
+  
 ```
     
 ## 🔗 Links
@@ -74,4 +75,3 @@ Instale....
 
  - [O que é git](https://pt.wikipedia.org/wiki/Git)
  - [O que é github](https://www.hostinger.com.br/tutoriais/o-que-github)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
