@@ -48,25 +48,116 @@ Então o próprio Linus Torvalds depois de ter feito engenharia reversa no siste
 Uma plataforma para times criarem seus projetos emm um unico lugar, a plataforma possui inumeras ferramentas para produção, aprendizagem, monitoramento, também é usada como uma rede social para desenvolvedores enfim é um montão de coisa juntas.
 </details>
 
-## Roadmap
+## Recursos usados
 
-- Iniciando com o GIT
+- Coputador com sitema operacional **Debian** 
 
-- Criando conta no GITHUB
+- Terminal Bash
 
-- Sincronizando máquina e servidor
+- Git
+
+- Github
 
 
-## Iniciando com o Git
+## Mini-Tutorial
 
-### Mini-Tutorial
+>**Downloard Git**
+- [Baixar Git](https://git-scm.com/downloads)
 
-Instale....
+  Não tem segredo, é só abrir a pasta de dowloard em sua maquina apos baixar, clicar no executavél e seguir clicando em next.
+
+> Abra seu terminal: CMD,PROMPT, BASH, ETC...
+
+- Como saber se a instalação foi bem sucedida?
+```bash
+    git --version
+```
+> Configuração do git
+Este passo é para configurarmos o Git, é preciso informar ao git quem está operando o sistema.
+
+- Passamos o nosso nome de usuário
 
 ```bash
-  
+    git config --global user.name = 'nome_usuario'
 ```
-    
+- Passamos o nosso e-mail principal
+
+```bash
+    git config --global user.email = 'meu_email@exemplo.com'
+```
+Agora toda vez que usarmos o git, ele registrarar o usuário que estava operando.
+
+```bash
+    git config --global user.email = 'meu_email@exemplo.com'
+```
+> Caso queira explorar os comando do git basta digitar em seu terminal.```git```
+
+O terminal listará varios comandos relacionados ao git
+
+```
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+...
+
+```
+> Lista de alguns comandos mais usados
+
+- [x] ```git init``` : Cria um repositório Git vazio ou reinicializa um existente
+
+Para esse comando é preciso criar uma pasta ou ter uma com arquivos do projeto, terá que abrir essa pasta no termminal e depois é só digitar esse comando. Uma Vez iniciado o repositorio não precisa passar o mesmo commando init na mesma pasta.
+
+```
+neres@debian:~/Documentos/development/teste$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/neres/Documentos/development/teste/.git/
+
+```
+
+- [x] ```git status``` : Mostra o status da árvore de trabalho.
+
+Seguinte mensagem deve aparecer caso tenha alguma alteração no repositório.
+
+```
+On branch main
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+- [x] ```git add .``` : Adiciona todos os conteúdos do arquivo ao índice.
+- [x] ```git add nome_diretorio``` : Adiciona um diretorio em especifico ao índice.
+- [x] ```git add nome_arquivo.txt``` : Adiciona um arquivo em especifico ao índice.
+
+> ***Branch : Lista, cria ou exclui branches***
+> Atenção, o git como monitora tudo que é feito quando se cria o repositorio, ele cria pontos que lingam a cada nova alteração feita no projeto, geralmente cada projeto e dividido em varias frentes de trabalho onde existe o projeto principal e suas copias que chamamos de filhos, e que esses compões o projeto.
+> Como a prática você entenderá seu funcionamento.
+> ![branch](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVxS88B_YU0CueV2bv_34pDmdPXv3RCJgB0A&usqp=CAU)
+
+
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/neresfabio)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fabioneresdejesus/)
